@@ -1,131 +1,76 @@
-SCIENTIFIC++ Calculator
+# SCIENTIFIC++ Calculator ✨
 
-A modern, responsive scientific calculator web application built with React and Tailwind CSS, featuring both basic arithmetic and advanced scientific functions.
+Precision meets elegance in this modern scientific calculator. Built with **React** and **Tailwind CSS**, it offers both fundamental arithmetic and advanced scientific functionalities in a responsive web interface.
 
-Features
-Basic Arithmetic Operations: Addition, subtraction, multiplication, division, modulo.
+## Key Features 🚀
 
-Scientific Functions: Sine (sin), Cosine (cos), Tangent (tan), Arc Sine (asin), Arc Cosine (acos), Arc Tangent (atan), Logarithm (log), Natural Logarithm (ln), Square Root (sqrt), Square (x²), Factorial (x!), Inverse (1/x), Exponent (eˣ), Absolute Value (|x|), Pi (π), and Euler's number (e).
+  * **Comprehensive Operations:**
+      * **Basic:** `+`, `-`, `×`, `÷`, `%` (modulo)
+      * **Scientific:** `sin`, `cos`, `tan`, `asin`, `acos`, `atan`, `log`, `ln`, `sqrt`, `x²`, `x!`, `1/x`, `eˣ`, `|x|`, `π`, `e`
+  * **Unit Toggle:** Seamlessly switch between **Radians (RAD)** and **Degrees (DEG)** for trigonometric functions.
+  * **Intuitive Controls:** Dedicated buttons for `AC` (All Clear) and `C` (Clear) for easy input management.
+  * **Responsive Design:** Flawlessly adapts to various screen sizes.
+  * **Robust Error Handling:** Displays "Error" for invalid operations (e.g., division by zero, invalid factorials).
 
-Mode Toggle: Switch between Radians (RAD) and Degrees (DEG) for trigonometric calculations.
+## Technologies 🛠️
 
-Memory Functionality: Basic memory storage (although not explicitly shown in buttons, the state variable memory exists).
+  * **Frontend:** React
+  * **Build Tool:** Vite
+  * **Styling:** Tailwind CSS
+  * **Routing:** React Router DOM
+  * **Icons:** Lucide React
+  * **Utilities:** clsx, tailwind-merge, Radix UI
 
-Clear Functions: All Clear (AC) and Clear (C) buttons.
+## Getting Started ⚡
 
-Responsive Design: Optimized for various screen sizes using Tailwind CSS.
+### Prerequisites
 
-Error Handling: Displays "Error" for invalid operations (e.g., division by zero, factorial of negative numbers).
+  * Node.js (\>= 20.0.0)
+  * npm (or yarn)
 
-Number Formatting: Formats large numbers into exponential notation and handles decimal precision.
+### Installation
 
-Technologies Used
-React: A JavaScript library for building user interfaces.
-
-Vite: A fast build tool for modern web projects.
-
-Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
-
-React Router DOM: For declarative routing in React applications.
-
-clsx & tailwind-merge: Utilities for conditionally joining CSS class names and merging Tailwind CSS classes.
-
-Lucide React: A collection of open-source icons for React.
-
-Radix UI (react-slot): For building accessible UI components.
-
-Installation
-To get a local copy up and running, follow these simple steps.
-
-Prerequisites
-Node.js (>= 20.0.0)
-
-npm (>= 8.0.0) or yarn
-
-Setup
-Clone the repository:
-
-Bash
-
+```bash
+# Clone the repository
 git clone <your-repository-url>
 cd calculator
-(Replace <your-repository-url> with the actual URL of your repository if available)
 
-Install dependencies:
+# Install dependencies
+npm install # or yarn install
+```
 
-Bash
+### Run Locally
 
-npm install
-# or
-yarn install
-Usage
-Development Server
-To run the project in development mode:
+```bash
+# Start development server
+npm run dev # or yarn dev
+```
 
-Bash
+Your app will be live at `http://localhost:5173`.
 
-npm run dev
-# or
-yarn dev
-This will start a development server, usually at http://localhost:5173, and the application will automatically reload upon code changes.
+### Build for Production
 
-Build for Production
-To build the application for production:
+```bash
+# Create optimized production build
+npm run build # or yarn build
+```
 
-Bash
+### Preview Production Build
 
-npm run build
-# or
-yarn build
-This command compiles and bundles the application into the dist directory.
+```bash
+# Serve the production build
+npm run preview # or yarn preview
+```
 
-Preview Production Build
-To preview the built application:
+## Project Structure 📁
 
-Bash
+  * `src/`: Core application source code.
+      * `components/`: Reusable UI components, including `Calculator.jsx` (the heart of the app).
+      * `pages/`: Defines main views like `Index.jsx` and `NotFound.jsx`.
+      * `lib/`: Utility functions.
+  * `public/`: Static assets.
+  * `package.json`: Project dependencies and scripts.
 
-npm run preview
-# or
-yarn preview
-This will serve the static files from the dist directory.
+## License 📄
 
-Project Structure
-public/: Contains static assets like icon.png and vite.svg.
-
-src/: Main source code directory.
-
-App.jsx: Main application component responsible for routing.
-
-index.css: Main CSS file importing Tailwind CSS.
-
-main.jsx: Entry point for the React application.
-
-components/: Reusable React components.
-
-Calculator.jsx: The core calculator logic and UI.
-
-ui/button.jsx: Custom button component using Radix UI and Tailwind CSS utilities.
-
-lib/utils.js: Utility functions (e.g., cn for class name merging).
-
-pages/: Page-level components.
-
-Index.jsx: The main landing page displaying the calculator.
-
-NotFound.jsx: Page displayed for non-existent routes.
-
-index.html: The main HTML file.
-
-package.json: Project metadata and dependencies.
-
-package-lock.json: Records the exact dependency tree.
-
-components.json: Configuration for shadcn/ui components.
-
-eslint.config.js: ESLint configuration for code linting.
-
-jsconfig.json: JavaScript language service configuration.
-
-vite.config.js: Vite build tool configuration.
-
-.gitignore: Specifies intentionally untracked files to ignore.
+This project is licensed under the **MIT License**.
